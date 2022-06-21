@@ -47,7 +47,7 @@
     Specifically:
     <ul>
     	<li> If the temperature of the smoker drops more than 15 degrees in 2.5 minutes, we want to alert the pitmaster that the smoker needs attention</li>
-    	<li> If the temperature of the food does not change by more than one degree over a 15 minute time period, we want to report that the food has hit the stall</li>
+    	<li> If the temperature of the food does not change by more than one degree over a 10 minute time period, we want to report that the food has hit the stall</li>
     </ul>
 
     The producer code that reads the historical data has been provided.
@@ -111,7 +111,7 @@ channel.start_consuming()
     	<li> Create another cell in your consumer notebook with the code <code>connection.close()</code></li>
     	<li> Run your consumer code (the first cell you created); fix errors that occur!</li>
     	<li> Run the producer code in the producer notebook</li>
-    	<li> Add a new Markdown cell at the bottom of your producer notebook and answer the following questions:</li>
+    	<li> Add a new Markdown cell at the bottom of your consumer notebook and answer the following questions:</li>
     		<ul>
     			<li> What times did the smoker need attention?</li>
     			<li> What time did channel 1 hit its stall? Channel 2?</li>
